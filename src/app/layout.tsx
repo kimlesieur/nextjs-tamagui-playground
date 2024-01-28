@@ -10,12 +10,15 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
 }) {
   return (
     <html lang="en">
       <body>
-        <NextTamaguiProvider>{children}</NextTamaguiProvider>
+        <NextTamaguiProvider>
+          <h1>Welcome to this App !</h1>
+          {children}
+        </NextTamaguiProvider>
       </body>
     </html>
   )
